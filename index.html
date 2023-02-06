@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="script.js" defer></script>
     <title>Document</title>
 </head>
 <body>
@@ -19,12 +20,14 @@
             </div>
         </div>
         <div class="form-sign-up">
+
             <div class="form-header">
                 <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <em>now</em> to get started.</p>
                 <p>You <em>know</em> you want to</p>
             </div>
             <div class="form-body">
                 <h3>Let's do this!</h3>
+                <div class="subtext">* denotes required field</div>
                 <form action="#" method="post" class="sign-up-form">
                     <div class="input-box">
                         <label for="first_name">First Name:</label>
@@ -35,20 +38,44 @@
                         <input type="text" id="last_name">
                     </div>
                     <div class="input-box">
-                        <label for="user_email">Email:</label>
-                        <input type="email" id="user_email">
+                        <label for="user_email">Email:*</label>
+                        <input type="email" id="user_email" class="input-expands" required>
+                        <div class="input-subtext" id="email_subtext">
+                            Requirements:
+                            <ol>
+                                <li>Username between 3-20 characters</li>
+                            </ol>
+                        </div> 
                     </div>
                     <div class="input-box">
-                        <label for="user_phone">Phone Number: </label>
-                        <input type="tel" id="user_phone">
+                        <label for="user_phone">Phone Number:* </label>
+                        <input type="tel" id="user_phone" class="input-expands" required>
+                        <div class="input-subtext" id="phone_subtext">
+                            Requirements:
+                            <ol>
+                                <li>Username between 3-20 characters</li>
+                            </ol>
+                        </div> 
                     </div>
                     <div class="input-box">
-                        <label for="user_password">Password: </label>
-                        <input type="password" id="user_password">
+                        <label for="user_password">Password:* </label>
+                        <input type="password" id="user_password" class="input-expands" required>
+                        <div class="input-subtext" id="password_subtext">
+                            Requirements:
+                            <ol>
+                                <li>Username between 3-20 characters</li>
+                            </ol>
+                        </div> 
                     </div>
                     <div class="input-box">
-                        <label for="user_confirm">Confirm Password: </label>
-                        <input type="password" id="user_confirm">
+                        <label for="user_confirm">Confirm Password:* </label>
+                        <input type="password" id="user_password2" class="input-expands" required>
+                        <div class="input-subtext" id="password2_subtext">
+                            Requirements:
+                            <ol>
+                                <li>Username between 3-20 characters</li>
+                            </ol>
+                        </div> 
                     </div>
                 </form>
                 <button class="submit-button">Submit</button>
@@ -56,6 +83,7 @@
             <div class="form-footer">
                 <p>Already have an account? <a href="#">Log in</a></p>
             </div>
+            
         </div>
     </div>
 </body>

@@ -3,11 +3,6 @@
     src: url(fonts/Norse-Bold.otf);
 }
 
-a:hover, a:visited, a:link, a:active
-{
-    text-decoration: none!important;
-}
-
 body {
     display: flex;
     align-items: center;
@@ -17,6 +12,7 @@ body {
 
 .project-container {
     display: flex;
+    justify-content: space-between;
     width: 100vw;
     height: 50vw;
 }
@@ -73,12 +69,11 @@ body {
 }
 
 .form-header, .form-body, .form-footer {
-    width: 100%;
+    width: 70%;
     height: 33%;
     display: flex;
-    background-color:#dfe0e0;
+    padding-left: 25px;
     opacity: .9;
-    padding-left: 10px;
 }
 
 .form-header {
@@ -90,7 +85,7 @@ body {
 .form-body {
     flex-direction: column;
     justify-content: space-evenly;
-    background-color:#f5f6f7;
+    background-color: #c4c6c7;
 }
 
 .sign-up-form {
@@ -106,6 +101,21 @@ body {
 .input-box {
     width: 50%;
     margin-bottom: 10px;
+}
+
+.subtext {
+    font-size: small;
+    color: red;
+}
+
+ .input-subtext {
+    font-size: small;
+    display: none;
+}
+
+.focused-subtext {
+    font-size: small;
+    display: inline-block;
 }
 
 .form-footer {
