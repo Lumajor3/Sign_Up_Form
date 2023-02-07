@@ -118,6 +118,16 @@ body {
     display: inline-block;
 }
 
+#input_error_container {
+    display: none;
+    color: red;
+}
+
+#input_validated_container {
+    display: none;
+    color: green;
+}
+
 .form-footer {
 
 }

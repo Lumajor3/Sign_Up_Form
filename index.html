@@ -43,7 +43,8 @@
                         <div class="input-subtext" id="email_subtext">
                             Requirements:
                             <ol>
-                                <li>Username between 3-20 characters</li>
+                                <li>Must contain "@"</li>
+                                <li>Must contain "."</li>
                             </ol>
                         </div> 
                     </div>
@@ -51,9 +52,12 @@
                         <label for="user_phone">Phone Number:* </label>
                         <input type="tel" id="user_phone" class="input-expands" required>
                         <div class="input-subtext" id="phone_subtext">
-                            Requirements:
+                            Acceptable formats:
                             <ol>
-                                <li>Username between 3-20 characters</li>
+                                <li>(123) 456-7890</li>
+                                <li>(123)456-7890</li>
+                                <li>123-456-7890</li>
+                                <li>1234567890</li>
                             </ol>
                         </div> 
                     </div>
@@ -63,7 +67,11 @@
                         <div class="input-subtext" id="password_subtext">
                             Requirements:
                             <ol>
-                                <li>Username between 3-20 characters</li>
+                                <li>At least 8 characters</li>
+                                <li>At least one uppercase letter</li>
+                                <li>At least one lowercase letter</li>
+                                <li>At leat one digit</li>
+                                <li>At least one special character</li>
                             </ol>
                         </div> 
                     </div>
@@ -73,17 +81,25 @@
                         <div class="input-subtext" id="password2_subtext">
                             Requirements:
                             <ol>
-                                <li>Username between 3-20 characters</li>
+                                <li>Both passwords match</li>
                             </ol>
                         </div> 
                     </div>
                 </form>
                 <button class="submit-button">Submit</button>
+                <div id="input_error_container">
+                    Please fix the following before continuing:
+                    <ul id="input_error_list">
+
+                    </ul>
+                </div>
+                <div id="input_validated_container">
+                    All your inputs are validated - If this was a real service you'd now be redirected
+                </div>
             </div>
             <div class="form-footer">
                 <p>Already have an account? <a href="#">Log in</a></p>
             </div>
-            
         </div>
     </div>
 </body>
